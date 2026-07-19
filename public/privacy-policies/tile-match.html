@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tile Match - Privacy Policy | MS Cyentic Studio</title>
+    
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .policy-container {
+            max-width: 800px;
+            margin: 6rem auto 4rem;
+            padding: 2.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+        }
+        .policy-container h1 {
+            font-size: 2.25rem;
+            margin-bottom: 0.5rem;
+        }
+        .policy-meta {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1rem;
+        }
+        .policy-container h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--accent-blue);
+        }
+        .policy-container p, .policy-container ul {
+            color: var(--text-secondary);
+            margin-bottom: 1.25rem;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        .policy-container ul {
+            padding-left: 1.5rem;
+        }
+        .policy-container li {
+            margin-bottom: 0.5rem;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-blue);
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+        .back-btn:hover {
+            color: var(--text-primary);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar-container">
+        <nav class="navbar">
+            <a href="../index.html" class="nav-logo">
+                <i data-lucide="code" class="logo-icon"></i>
+                <span>MS Cyentic Studio</span>
+            </a>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode">
+                    <i data-lucide="moon" class="theme-icon-dark"></i>
+                    <i data-lucide="sun" class="theme-icon-light" style="display: none;"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="policy-container">
+            <a href="../index.html" class="back-btn">
+                <i data-lucide="arrow-left"></i>
+                <span>Back to Home</span>
+            </a>
+            <h1>Privacy Policy</h1>
+            <p class="policy-meta">Last Updated: July 19, 2026 | Application: <strong>Tile Match</strong></p>
+
+            <p>
+                At MS Cyentic Studio, we build applications that respect your data and prioritize your privacy. This Privacy Policy describes how we handle information in the <strong>Tile Match</strong> mobile game application.
+            </p>
+
+            <h2>1. Information Collection and Use</h2>
+            <p>
+                <strong>Tile Match does not collect, record, track, or share any personal information.</strong>
+            </p>
+            <p>
+                The game operates entirely offline:
+            </p>
+            <ul>
+                <li><strong>No Network Connection Needed:</strong> The app does not require a constant network connection to run, and does not synchronize details with external services.</li>
+                <li><strong>No Ads or Trackers:</strong> We do not include any advertisement SDKs, analytics tracking networks, or behavior monitoring tools.</li>
+                <li><strong>Local Progress Saving:</strong> Your high scores, current levels, and customization tokens are stored directly on your local device storage using standard Android shared preferences.</li>
+            </ul>
+
+            <h2>2. Device Permissions</h2>
+            <p>
+                Tile Match operates without requesting high-risk system permissions (such as location, camera, contacts, or notification listener logs). 
+            </p>
+
+            <h2>3. Children's Privacy</h2>
+            <p>
+                Since we do not collect any personal data or transmit tracking profiles, Tile Match is fully safe for children and matches all requirements for family-friendly Play Store listings.
+            </p>
+
+            <h2>4. Changes to This Privacy Policy</h2>
+            <p>
+                We may update our Privacy Policy from time to time. Since the game is offline and does not collect data, any changes will be to clarify policies or adapt to new app features. We recommend checking this page periodically for updates.
+            </p>
+
+            <h2>5. Contact Us</h2>
+            <p>
+                If you have any questions or feedback regarding this Privacy Policy, please contact us at:
+            </p>
+            <p>
+                Email: <a href="mailto:chitranjank.co@gmail.com" style="color: var(--accent-blue);"><strong>chitranjank.co@gmail.com</strong></a>
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 MS Cyentic Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS Logic for Theme Only -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+            const themeToggleBtn = document.getElementById('themeToggle');
+            const moonIcon = themeToggleBtn.querySelector('.theme-icon-dark');
+            const sunIcon = themeToggleBtn.querySelector('.theme-icon-light');
+            const htmlElement = document.documentElement;
+
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            htmlElement.setAttribute('data-theme', savedTheme);
+            updateToggleIcons(savedTheme, moonIcon, sunIcon);
+
+            themeToggleBtn.addEventListener('click', () => {
+                const currentTheme = htmlElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                
+                htmlElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                updateToggleIcons(newTheme, moonIcon, sunIcon);
+            });
+        });
+
+        function updateToggleIcons(theme, moonIcon, sunIcon) {
+            if (theme === 'dark') {
+                moonIcon.style.display = 'block';
+                sunIcon.style.display = 'none';
+            } else {
+                moonIcon.style.display = 'none';
+                sunIcon.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
