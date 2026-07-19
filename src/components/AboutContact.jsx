@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, MapPin } from 'lucide-react';
+import { FileText, MapPin } from 'lucide-react';
 
 export default function AboutContact() {
   return (
@@ -17,12 +17,17 @@ export default function AboutContact() {
         
         <div id="contact" className="contact-card">
           <h2>Get In Touch</h2>
-          <p>Have questions, feedback, or support inquiries about our applications? Reach out directly via email.</p>
+          <p>Have questions, feedback, or support inquiries about our applications? Please fill out our contact form.</p>
           
           <div className="contact-methods">
-            <a href="mailto:chitranjank.co@gmail.com" className="contact-item">
-              <Mail />
-              <span>chitranjansharma.dev@gmail.com</span>
+            <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdBx0WG_jCXtDjuzZu2cGDT_0inIOA5QlydcdHOfhn1j1S9rA/viewform?usp=publish-editor" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="contact-form-btn"
+            >
+              <FileText />
+              <span>Open Google Form</span>
             </a>
             <div className="contact-item">
               <MapPin />
