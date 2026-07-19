@@ -72,7 +72,7 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="phone-app-content">
-                  <img src="/logo.png" alt="MS Cyentic Studio Logo" style={{ width: '80px', height: '80px', borderRadius: '20px', objectFit: 'cover', marginBottom: '1.5rem', border: '1px solid rgba(0, 0, 0, 0.1)' }} />
+                  <img src="logo.png" alt="MS Cyentic Studio Logo" style={{ width: '80px', height: '80px', borderRadius: '20px', objectFit: 'cover', marginBottom: '1.5rem', border: '1px solid rgba(0, 0, 0, 0.1)' }} />
                   <h3 className="phone-app-title" style={{ color: '#0f172a' }}>MS Cyentic Studio</h3>
                   <p className="phone-app-desc" style={{ color: '#475569' }}>Something amazing is currently in the works. Stay tuned for our release!</p>
                   <div className="phone-app-button" style={{ background: 'linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)', boxShadow: '0 4px 15px rgba(59, 130, 246, 0.3)' }}>Coming Soon</div>

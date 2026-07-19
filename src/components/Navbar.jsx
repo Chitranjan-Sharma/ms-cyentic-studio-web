@@ -35,7 +35,7 @@ export default function Navbar({ theme, toggleTheme }) {
     <header className="navbar-container">
       <nav className="navbar">
         <a href="#" className="nav-logo">
-          <img src="/logo.png" alt="MS Cyentic Studio" className="logo-icon" style={{ width: '30px', height: '30px', borderRadius: '50%', objectFit: 'cover' }} />
+          <img src="logo.png" alt="MS Cyentic Studio" className="logo-icon" style={{ width: '30px', height: '30px', borderRadius: '50%', objectFit: 'cover' }} />
           <span>MS Cyentic Studio</span>
         </a>
         
