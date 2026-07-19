@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://Chitranjan-Sharma.github.io/ms-cyentic-studio-web/sitemap.xml
+Sitemap: https://cyenticstudio.com/sitemap.xml
