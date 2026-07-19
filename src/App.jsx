@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Apps from './components/Apps';
 import WhyWeBuild from './components/WhyWeBuild';
+import Faq from './components/Faq';
 import AboutContact from './components/AboutContact';
 import Footer from './components/Footer';
 
@@ -27,6 +28,7 @@ export default function App() {
         <Hero />
         <Apps />
         <WhyWeBuild />
+        <Faq />
         <AboutContact />
       </main>
       <Footer />

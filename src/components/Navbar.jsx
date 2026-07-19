@@ -27,6 +27,7 @@ export default function Navbar({ theme, toggleTheme }) {
   const navLinks = [
     { label: 'Home', href: '#home', id: 'home' },
     { label: 'Apps', href: '#apps', id: 'apps' },
+    { label: 'FAQ', href: '#faq', id: 'faq' },
     { label: 'About', href: '#about', id: 'about' },
     { label: 'Contact', href: '#contact', id: 'contact' },
   ];
