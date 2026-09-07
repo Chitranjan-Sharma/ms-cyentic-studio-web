@@ -72,10 +72,13 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="phone-app-content">
-                  <img src="logo.png" alt="MS Cyentic Studio Logo" style={{ width: '80px', height: '80px', borderRadius: '20px', objectFit: 'cover', marginBottom: '1.5rem', border: '1px solid rgba(0, 0, 0, 0.1)' }} />
-                  <h3 className="phone-app-title" style={{ color: '#0f172a' }}>MS Cyentic Studio</h3>
-                  <p className="phone-app-desc" style={{ color: '#475569' }}>Something amazing is currently in the works. Stay tuned for our release!</p>
-                  <div className="phone-app-button" style={{ background: 'linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)', boxShadow: '0 4px 15px rgba(59, 130, 246, 0.3)' }}>Coming Soon</div>
+                  <img src="/iq-hit-2-icon.png" alt="IQ Hit 2 - Mind Training Puzzle" style={{ width: '80px', height: '80px', borderRadius: '20px', objectFit: 'cover', marginBottom: '1.25rem', boxShadow: '0 8px 20px rgba(0, 0, 0, 0.15)' }} />
+                  <h3 className="phone-app-title" style={{ color: '#0f172a', fontWeight: '800' }}>IQ Hit 2</h3>
+                  <p className="phone-app-desc" style={{ color: '#475569', fontSize: '0.9rem' }}>Mind Training Puzzle with 4 fun brain & pattern puzzles!</p>
+                  <a href="#apps" className="phone-app-button" style={{ background: 'linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)', boxShadow: '0 4px 15px rgba(59, 130, 246, 0.3)', cursor: 'pointer', textDecoration: 'none', color: '#ffffff', display: 'inline-flex', alignItems: 'center', gap: '0.4rem', justifyContent: 'center' }}>
+                    <span>Explore IQ Hit 2</span>
+                    <ArrowRight size={16} />
+                  </a>
                 </div>
               </div>
             </div>
